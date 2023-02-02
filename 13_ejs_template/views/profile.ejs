@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ejs template</title>
+    <style>
+        h1,p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        EJS Template Engine
+    </h1>
+    <p>
+        name:<%= user.name %>
+    </p>
+    <p>
+        email: <%= user.email %>
+    </p>
+    <p>
+        comment: <%= user.comment %>
+    </p>
+    <p>
+        languages: <% user.lang.forEach((e)=>{ %>
+            <b><%= e %></b>
+       <% }) %>
+    </p>
+</body>
+</html>
