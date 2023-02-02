@@ -1,0 +1,15 @@
+const express = require('express');
+const app = express();
+app.get('',(req,res)=>{
+    res.send('hello world')
+})
+
+app.get('/about',(req,res)=>{
+    res.send('about us page')
+})
+
+app.get('/help',(req,res)=>{
+    res.send('help us page')
+})
+
+app.listen(5000)
