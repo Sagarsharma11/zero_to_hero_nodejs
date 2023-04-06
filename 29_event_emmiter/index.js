@@ -11,6 +11,7 @@ event.on("countAPI",()=>{
 
 app.get('/',(req,res)=>{
     res.send('home')
+    event.emit("countAPI")
 })
 
 app.get('/search',(req,res)=>{
